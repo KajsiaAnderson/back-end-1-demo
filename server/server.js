@@ -10,7 +10,6 @@ app.use(cors())
 const inventory = ['greeting card', 'wagon', 'computer', 'table', 'chair', 'milk', 'sailboat', 'conditioner', 'rusty nail', 'desk']
 
 app.get("/api/inventory", (req, res) => {
-    // res.status(200).send(inventory)
 
     const item = req.query.item
     // or if more than one item you can write: const {item} = req.query
